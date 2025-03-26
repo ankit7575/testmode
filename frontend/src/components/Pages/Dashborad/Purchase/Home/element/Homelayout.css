@@ -1,0 +1,57 @@
+/* Homelayout.css */
+
+.home-layout {
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+  }
+  
+  .home-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .franchise-card {
+    background-color: #ffffff;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+  }
+  
+  .franchise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-location {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+  }
+  
+  .card-dashboard {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+  }
+  
+  .card-stock {
+    background-color: #fff3e0;
+    border-color: #ffcc80;
+  }
+  
+  .franchise-stock {
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 10px 0;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    color: #2e7d32;
+  }
+  

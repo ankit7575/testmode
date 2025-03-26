@@ -1,0 +1,115 @@
+/* Form Container */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  /* Login Form */
+  .login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Form Labels */
+  .form-label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  /* Form Inputs */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .form-input:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+  }
+  
+  /* Password Container */
+  .password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-input {
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #6e8efb;
+    transition: color 0.3s;
+  }
+  
+  .toggle-password:hover {
+    color: #a777e3;
+  }
+  
+ /* Buttons */
+ .button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #5a7be3, #9167d7);
+  }
+
+  
+  /* Disabled Button */
+  .button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+  
+  /* Outline Button */
+  .button.outline {
+    background: transparent;
+    color: #6e8efb;
+    border: 2px solid #6e8efb;
+  }
+  
+  .button.outline:hover {
+    background: #6e8efb;
+    color: white;
+  }
+
+  /* Responsive Design */
+@media (max-width: 500px) {
+    .login-form {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }

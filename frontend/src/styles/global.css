@@ -1,0 +1,279 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #333;
+}
+
+/* Page Styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background: #6e8efb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5a7cfb;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #6e8efb;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  form {
+      width: 90%;
+  }
+}
+
+/* Form Container */
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Login Form */
+.login-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-button {
+  padding: 10px;
+  background: #6e8efb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #5a7cfb;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Balance Section */
+.balance-amount {
+  font-size: 2rem;
+  color: green;
+}
+
+.deposit-amount {
+  color: blue;
+}
+
+.withdrawal-amount {
+  color: red;
+}
+
+/* Box Styles */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secondbox {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.secondbox:hover {
+  background: #6e8efb;
+  color: white;
+}
+
+.boxtext {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.secondbox:hover .boxtext {
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.box {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Admin Franchise Selection */
+.admin-franchise-container {
+  padding: 40px 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.franchise-selection-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.franchise-selection-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.franchise-dropdown {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.franchise-dropdown:focus {
+  border-color: #6e8efb;
+}
+
+/* Buttons */
+.green-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.green-button:hover {
+  background: #45a049;
+}

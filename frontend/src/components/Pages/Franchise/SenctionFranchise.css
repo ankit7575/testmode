@@ -1,0 +1,93 @@
+/* Background Styling */
+.franchise-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  /* Form Box */
+  .franchise-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .franchise-form:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Heading */
+  .franchise-form h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown */
+  .franchise-dropdown {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #6e8efb;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .franchise-dropdown:focus {
+    border-color: #a777e3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(167, 119, 227, 0.5);
+  }
+  
+  /* Buttons */
+  .button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #5a7be3, #9167d7);
+  }
+  
+  /* Disabled Button */
+  .button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Outline Button */
+  .button.outline {
+    background: transparent;
+    color: #6e8efb;
+    border: 2px solid #6e8efb;
+  }
+  
+  .button.outline:hover {
+    background: #6e8efb;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .franchise-form {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
